@@ -57,8 +57,16 @@ siano correttamente installati e configurati i seguenti software:
 * Java Development Kit (versione 11, o superiore).
 
 Una volta accertato questo prerequisito, è sufficiente *clonare* questo
-repository, aggiungere la directory `.bin` in esso contenuta al *path* e quindi
-procedere nel modo descritto per l'uso su Gitpod.
+repository e inserire nel file `.bin/prog2home.sh`, al posto di
+`/workspace/esercitazioni`, la directory dove si vogliono salvare le varie
+esercitazioni.
+
+Per usare i comandi `svolgi`, `verifica`, etc. sulla shell (funziona con
+`bash`, `zsh` e possibilmente altre), usare il comando
+`export PATH=$PATH:/percorso/assoluto/al/repository/.bin`, oppure aggiungere
+il comando al proprio `~/.bashrc` (o analoghi) per rendere il cambiamento permanente.
+
+
 
 Questa modalità è riservata agli studenti già esperti nell'uso degli strumenti
 indicati, ragione per la quale non è previsto alcun supporto ulteriore in caso
