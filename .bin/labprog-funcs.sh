@@ -3,6 +3,8 @@ if  [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     exit 1
 fi
 
+source ${0%/*}/prog2home.sh
+
 up_tm() {
     cur=$(pwd -P)
     while [ ! -z $cur ] && [ ! -r "$cur/.tm" ]; do
@@ -12,7 +14,7 @@ up_tm() {
         chmod u+x "$cur/.tm"
         "$cur/.tm" "$@"
     else
-        echo "${0##*/}: errore: posizionarsi in una sottodirectory di '/workspace/esercitazioni'..." 2>&1
+        echo "${0##*/}: errore: posizionarsi in una sottodirectory di '$PROG2HOME'..." 2>&1
         return
     fi
 }
