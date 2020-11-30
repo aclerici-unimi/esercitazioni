@@ -1,3 +1,7 @@
+# Fork notes
+Despite closing my pull request, the repo's original author (basically) integrated my changes by himself. There's not really any reason to keep this fork alive, therefore I'm archiving it for now.
+
+
 # Prog2@UniMI Esercitazioni
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
